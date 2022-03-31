@@ -1,5 +1,4 @@
-﻿@model DATA_GENERATOR_APP_FOR_MINIECOMMERCE.Models.ProductModel
-
+﻿
 @{
     ViewData["Title"] = "GenerateData";
 }
@@ -10,6 +9,7 @@
             <div class="col-sm-4">
                 <input type="file" id="fileupload" multiple="multiple" name="image" class="form-control bg-light file-upload" /><br />
                 <input type="number"  name="noOfRecords" placeholder="Enter a Positive Number" class="form-control" /><br />
+                <input  name="Modelname" placeholder="Enter Model Name" class="form-control" /><br />
                 <input type="submit" id="btnproduct" value="Generate Records" class="btn btn-primary p-2 mt-1" /><br />
                 <p class="text-success">@ViewBag.success</p>
                 <p class="text-danger">@ViewBag.danger</p>
